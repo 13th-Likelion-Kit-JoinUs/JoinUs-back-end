@@ -1,13 +1,9 @@
 package com.example.JoinUs.test.dto;
-
 import com.example.JoinUs.test.entity.Question;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.List;
 import java.util.stream.Collectors;
-
 @Getter
 @Setter
 public class QuestionResponse {

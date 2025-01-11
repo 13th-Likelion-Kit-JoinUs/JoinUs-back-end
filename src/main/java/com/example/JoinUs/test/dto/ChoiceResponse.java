@@ -1,9 +1,7 @@
 package com.example.JoinUs.test.dto;
-
 import com.example.JoinUs.test.entity.Choice;
 import lombok.Getter;
 import lombok.Setter;
-
 @Getter
 @Setter
 public class ChoiceResponse {
