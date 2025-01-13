@@ -1,4 +1,4 @@
-package com.example.JoinUs.test.util;
+package com.example.JoinUs.test.init;
 
 import com.example.JoinUs.test.entity.Choice;
 import com.example.JoinUs.test.entity.Question;
@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
 @Component
-public class DataInitializer {
+public class QuestionChoiceDataInitializer {
 
     private final QuestionRepository questionRepository;
     private final ChoiceRepository choiceRepository;
