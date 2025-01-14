@@ -5,6 +5,7 @@ import com.example.JoinUs.test.entity.Question;
 import com.example.JoinUs.test.repository.ChoiceRepository;
 import com.example.JoinUs.test.repository.QuestionRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
@@ -12,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
 @Component
+@Slf4j
 public class QuestionChoiceDataInitializer {
 
     private final QuestionRepository questionRepository;
@@ -107,7 +109,7 @@ public class QuestionChoiceDataInitializer {
 
     private void addQuestionWithChoices(String questionContent, int step, String[] choiceTexts, int[][] scores) {
         if (questionRepository.existsByStep(step)) {
-            System.out.println("Step " + step + " already exists. Skipping...");
+            log.info("Step " + step + " already exists. Skipping...");
             return;
         }
 
