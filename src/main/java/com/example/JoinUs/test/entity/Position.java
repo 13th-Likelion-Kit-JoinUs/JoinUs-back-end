@@ -23,15 +23,12 @@ public class Position {
     @Column(nullable = false)
     private String description; // 대표 문장
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "position_id")
+    @OneToMany(mappedBy = "position", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Tool> tools; // 해당 직무에 필요한 툴 목록
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "position_id")
+    @OneToMany(mappedBy = "position", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Knowledge> knowledgeList; // 해당 직무에 필요한 지식 목록
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "position_id")
+    @OneToMany(mappedBy = "position", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Keyword> keywords; // 해당 직무에 필요한 키워드 목록
 }
