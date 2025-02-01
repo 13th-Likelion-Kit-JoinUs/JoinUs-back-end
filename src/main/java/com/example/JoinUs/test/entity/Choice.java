@@ -20,13 +20,13 @@ public class Choice {
     private int scorePlanning;
 
     @Column(nullable = false)
-    private int scoreDesign;
+    private int scoreCreativity;
 
     @Column(nullable = false)
-    private int scoreFront;
+    private int scoreExecution;
 
     @Column(nullable = false)
-    private int scoreBack;
+    private int scoreAnalyze;
 
     @ManyToOne
     @JoinColumn(name="question_id",nullable=false)

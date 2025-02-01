@@ -8,18 +8,18 @@ public class ChoiceResponse {
     private Long id;
     private String choiceText;
     private int scorePlanning;
-    private int scoreDesign;
-    private int scoreFront;
-    private int scoreBack;
+    private int scoreCreativity;
+    private int scoreExecution;
+    private int scoreAnalyze;
 
     public static ChoiceResponse fromEntity(Choice choice){
         ChoiceResponse dto = new ChoiceResponse();
         dto.setId(choice.getId());
         dto.setChoiceText(choice.getChoiceText());
         dto.setScorePlanning(choice.getScorePlanning());
-        dto.setScoreDesign(choice.getScoreDesign());
-        dto.setScoreFront(choice.getScoreFront());
-        dto.setScoreBack(choice.getScoreBack());
+        dto.setScoreCreativity(choice.getScoreCreativity());
+        dto.setScoreExecution(choice.getScoreExecution());
+        dto.setScoreAnalyze(choice.getScoreAnalyze());
         return dto;
     }
 }
