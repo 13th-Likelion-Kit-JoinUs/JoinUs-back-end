@@ -1,4 +1,4 @@
-![image-3](https://github.com/user-attachments/assets/2b30877d-7e9e-4696-88c5-dd51dee0b84c)# **🦁 아기사자 테스트**
+# **🦁 아기사자 테스트**
 
 ## 📝 소개
 
